@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Admin Dashboard</title>
+       <style>
+              body{
+                     font-family: serif;
+                     margin: 0;
+                     padding: 0;
+              }
+
+              header{
+                     background-color: #333;
+                     color: white;
+                     padding: 10px 0;
+                     text-align: center;
+              }
+
+              nav{
+                     background-color: #444;
+                     overflow: hidden;
+              }
+              nav ul {
+                     list-style: none;
+                     margin: 0;
+                     padding: 0;
+              }
+
+              nav ul li{
+                     float: left;
+              }
+
+              nav ul li a{
+                     display: block;
+                     color: white;
+                     padding: 14px 20px;
+                     text-decoration: none;
+              }
+
+              nav ul li a:hover{
+                     background-color: #555;
+              }
+
+              main{
+                     padding: 20px;
+              }
+
+              section{
+                     margin-bottom: 20px;
+              }
+
+              footer{
+                     background-color: #333;
+                     color: white;
+                     text-align: center;
+                     padding: 10px 0;
+                     position: fixed;
+                     width: 100%;
+                     bottom: 0;
+              }
+       </style>
+</head>
+<body>
+       <header>
+              <h1>Dashboard Admin</h1>
+       </header>
+       <nav>
+              <ul>
+                     <li><a href="">Overview</a></li>
+                     <li><a href="">Users</a></li>
+                     <li><a href="">Settings</a></li>
+                     <li><a href="">Reports</a></li>
+                     <li><a href="">Logout</a></li>
+              </ul>
+       </nav>
+
+       <main>
+              <section id="overview">
+                     <h2>Overview</h2>
+                     <h3>Total users : 1200</h3>
+                     <h3>New Signup : 3000</h3>
+              </section>
+              <section id="users">
+                     <h2>Users</h2>
+                     <table>
+                            <thead>
+                                   <tr>
+                                          <th>ID</th>
+                                          <th>Name</th>
+                                          <th>Email</th>
+                                          <th>Action</th>
+                                   </tr>
+                            </thead>
+                            <tbody>
+                                   <tr>
+                                          <td>1</td>
+                                          <td>Bahrul Rozak</td>
+                                          <td>bahrulrozak@gmail.com</td>
+                                          <td><button>Edit</button></td>
+                                   </tr>
+                                   <tr>
+                                          <td>2</td>
+                                          <td>Bahrul Rozak</td>
+                                          <td>bahrulrozak@gmail.com</td>
+                                          <td><button>Edit</button></td>
+                                   </tr>
+                                   <tr>
+                                          <td>3</td>
+                                          <td>Bahrul Rozak</td>
+                                          <td>bahrulrozak@gmail.com</td>
+                                          <td><button>Edit</button></td>
+                                   </tr>
+                            </tbody>
+                     </table>
+              </section>
+              <section id="settings">
+                     <h2>Settings</h2>
+              </section>
+              <section id="reports">
+                     <h2>Reports</h2>
+              </section>
+              <section id="logout">
+                     <h2>Logout</h2>
+              </section>
+       </main>
+       <footer>
+              <p>&copyl 2024 Dashboard Bro</p>
+       </footer>
+</body>
+</html>

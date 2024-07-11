@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>FAQ</title>
+       <style>
+              body{
+                     font-family: serif;
+                     margin: 0;
+                     padding: 0;
+                     background-color: #f8f8f8;
+              }
+
+              .faq-container{
+                     max-width: 800px;
+                     margin: 50px auto;
+                     padding: 20px;
+                     background-color: #fff;
+                     border-radius: 8px;
+                     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }
+
+              .faq-item{
+                     margin-bottom: 20px;
+                     border-bottom: 1px solid #e0e0e0;
+                     padding-bottom: 10px;
+              }
+
+              .question{
+                     font-weight: bold;
+                     cursor: pointer;
+              }
+
+              .answer{
+                     display: none;
+                     margin-top: 10px;
+                     padding: 10px;
+                     background-color: #f0f0f0;
+                     border-left: 4px solid #2196f3;
+                     border-radius: 4px;
+              }
+
+              .answer.active{
+                     display: block;
+              }
+       </style>
+</head>
+<body>
+       <div class="faq-container">
+              <div class="faq-item">
+                     <div class="question">Pertanyaan 1</div>
+                     <div class="answer">Jawaban 1</div>
+              </div>
+              <div class="faq-item">
+                     <div class="question">Pertanyaan 2</div>
+                     <div class="answer">Jawaban 2</div>
+              </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+</html>

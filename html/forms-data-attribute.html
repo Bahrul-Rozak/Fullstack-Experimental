@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+              <meta charset="UTF-8">
+              <meta name="viewport"
+                     content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+       </head>
+       <body>
+              <form>
+                     <label for="myBrowser">Choose a browser from this
+                            list:</label>
+                     <input list="browsers" id="myBrowser" name="myBrowser" />
+                     <datalist id="browsers">
+                            <option value="Chrome"></option>
+                            <option value="Firefox"></option>
+                            <option value="Opera"></option>
+                            <option value="Safari"></option>
+                            <option value="Microsoft Edge"></option>
+                     </datalist>
+
+              </form>
+
+              <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                     <h2>Implementasi Output</h2>
+                     <label for="a">Angka 1:</label>
+                     <input type="range" id="a" name="a" value="50">
+                     <label for="b">Angka 2:</label>
+                     <input type="range" id="b" name="b" value="50">
+                     <output name="result" for="a b">100</output>
+              </form>
+       </body>
+</html>

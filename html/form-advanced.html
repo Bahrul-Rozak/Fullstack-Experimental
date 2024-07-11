@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Form Advanced</title>
+</head>
+<body>
+       <h3>Validation API</h3>
+       <form>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" required>
+              <input type="submit" value="send email">
+       </form>
+
+       <h3>Input Type yang lebih kompleks</h3>
+       <form>
+              <label for="tanggal">Tanggal Lahir</label>
+              <input type="date" id="date" name="date">
+       </form>
+
+       <h3>Pola Input yang disesuaikan</h3>
+       <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+">
+              <br>
+              <small class="error">Harap masukkan username yang valid</small>
+              <input type="submit" value="register now">
+       </form>
+       <h3>Custom Validation</h3>
+       <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" title="Masukkan username sebanyak 8 karakter" pattern=".{8,}">
+              <br>
+              <small class="error">Harap masukkan username yang valid</small>
+              <input type="submit" value="register now">
+       </form>
+</body>
+</html>

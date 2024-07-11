@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>SSE</title>
+</head>
+<body>
+       <h1>Server Sent events Demo</h1>
+       <div id="events"></div>
+       <script>
+              const eventSource = new EventSource('http://localhost:3000/events')
+              eventSource.onmessage = function(event){
+                     const newElement = document.createElement('div')
+                     newElement.textContent = `Waktu sekarang : ${event.data}`
+                     document.getElementById('events').appendChild(newElement)
+              }
+
+              eventSource.onerror = function(event){
+                     console.log(`SSE Error`, event);
+              }
+       </script>
+</body>
+</html>

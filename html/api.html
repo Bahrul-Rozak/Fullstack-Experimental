@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Geolocation API</title>
+</head>
+<body>
+       <h1>Lokasi Anda</h1>
+       <p id="lokasi"></p>
+
+       <script>
+              if (navigator.geolocation){
+                     navigator.geolocation.getCurrentPosition(function(position){
+                            let latitude = position.coords.latitude
+                            let longitude = position.coords.longitude
+                            document.getElementById('lokasi').innerHTML = 'Latitude: ' + latitude + 'Longitude' + longitude
+                     })
+              }else{
+                     document.getElementById('lokasi').innerHTML = 'Geolocation tidak didukung oleh browser iye'
+              }
+       </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Web Components</title>
+</head>
+<body>
+       <template id="my-custom-element">
+              <style>
+                     :host{
+                            display: block;
+                            padding: 10px;
+                            background: lightseagreen;
+                     }
+              </style>
+              <button id="my-button">Click Me</button>
+       </template>
+
+       <script>
+              class MyCustomElement extends HTMLElement{
+                     constructor(){
+                            super()
+                            const template = document.getElementById("my-custom-element").content
+                            const shadowRoot = this.attachShadow({mode:'open'})
+                            shadowRoot.appendChild(template.cloneNode(true))
+                            shadowRoot.getElementById('my-button').addEventListener('click', ()=>{
+                                   alert('Hello World!')
+                            })
+                     }
+              }
+              customElements.define('my-custom-element', MyCustomElement)
+       </script>
+       <my-custom-element></my-custom-element>
+</body>
+</html>
